@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>MY MUSIC PLAYER</title>
+	<meta name="description" content="Free Html5 Templates and Free Responsive Themes Designed by Kimmy | zerotheme.com">
+	<meta name="author" content="Umesh" >
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/responsiveslides.css" />
+	
+
+	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	<script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 700,
+			maxwidth: 962,
+			namespace: "centered-btns"
+		  });
+		});
+	</script>
+		<title>MUSIC PLAYLIST GENERATOR</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="css/responsive.css" media="all" rel="stylesheet" type="text/css" />
+	
+</head>
+<body>
+
+	
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<div class="featured">
+	<div class="wrap-featured zerogrid">
+		<div class="slider">
+			<div class="rslides_container">
+				<ul class="rslides" id="slider">
+					<li><img src="images/slide1.png"/></li>
+					<li><img src="images/slide3.png"/></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+h1 {
+    color:white;
+    font-family:verdana;
+    font-size:300%;
+
+}
+p  {
+    color:red;
+    font-family:courier;
+    font-size:160%;
+}
+</style>
+<br>
+<br>
+ <h1 align="center"> My Music Player </h1> 
+
+<form action="test.php" method="post">
+	<tr>
+		<td id ="navigation">
+		<ul class ="subjects"><br/><br/><br/><br/>
+		<div style="padding:10em 0 0 0 !important;"><center> <select name="dropdown" style="width:230px; font-size:18;">
+		  <option value="artist" >Artist</option>
+		  <option value="title" selected>Song Title</option>
+		  <option value="tag">Tag</option>
+		</select> </center></div>
+			<?php
+				
+								
+			 ?>
+		</ul>
+		</td>
+		<td id = "page">
+			<div style="padding:180px 10px 10px 0px;"><center>
+				<input type="search" name="searchstr" placeholder="Enter keyword, seperated by comma " style="width: 650px; 
+				border:2px solid #ccc; padding: 16px 3px 16px 30px; font-size: 20; border-radius: 17px;background:white url(images/zl.png)
+				left center no-repeat;vertical-align:middle;float:center;" autofocus /></center>
+			</div>
+			<div><center>
+				<input id="radiobutton1" type="radio" name="option" value="OR" checked="checked"><label for="radio1" style="font-size:20;">
+				<span><span></span></span>Union</label>
+				<input id="radiobutton2" type="radio" name="option" value="AND"><label for="radio2" style="font-size:18;">
+				<span><span></span></span>Intersection</label></center>
+			</div>
+			<div><center>
+				<input id="checkbox1" type="checkbox" name="searchcover" value="2" checked="checked"><label for="checkbox1" style="font-size:20;">
+				<span></span>Search Covers Only</label></center>
+			</div>
+			<div>
+				<center><input type="submit" name="submit" value="Search" style="width:250px; font-size:20;"/><br/></center>
+			</div>
+
+			<?php 
+			?>
+		</td>
+	</tr>
+</form>
+
+
+</body>
+</html>
